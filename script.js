@@ -49,7 +49,7 @@ function atualizaTabela(){
 function atualizaMediaFinal(){
     const mediaFinal = calculaMedia()
 
-    document.getElementById('media').innerHTML = mediaFinal
+    document.getElementById('media').innerHTML = mediaFinal.toFixed(2)
     document.getElementById('media-final').innerHTML = mediaFinal >= 7 ? spanAprovado : spanReprovado
 
 }
